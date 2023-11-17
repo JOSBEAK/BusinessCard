@@ -1,4 +1,7 @@
 import Typography from "@mui/material/Typography";
+import Framework from "./Framework";
+import Languages from "./Languages";
+import Tools from "./Tools";
 function PersonalInfo() {
   return (
     <div>
@@ -56,6 +59,7 @@ function PersonalInfo() {
                 position: "relative",
                 left: "15%",
                 textAlign: "justify",
+                color: "#01080f",
               }}
             >
               Hi, I am Anurag 🙋🏻‍♂️, As a dynamic and driven Full-Stack Developer,
@@ -66,6 +70,7 @@ function PersonalInfo() {
               designing seamless user experiences.
             </Typography>
           </div>
+          {/* Content for Tech Stack */}
           <div>
             <h1
               style={{
@@ -73,25 +78,16 @@ function PersonalInfo() {
                 fontWeight: "bold",
                 position: "relative",
                 left: "15%",
-                margin: "5px 0px",
+                margin: "50px 0px 0px",
               }}
             >
               Tech-stack
             </h1>
-            <ul
-              style={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                position: "relative",
-                left: "12%",
-                margin: "5px 0px",
-              }}
-            >
-              <li>Javascript</li>
-              <li>ReactJs</li>
-              <li>Java</li>
-              <li>Spring-Boot</li>
-            </ul>
+          </div>
+          <div style={{ display: "flex", position: "relative", left: "15%" }}>
+            <Framework />
+            <Languages />
+            <Tools />
           </div>
         </div>
       </section>

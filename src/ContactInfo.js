@@ -1,14 +1,14 @@
-import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
-import { CiPhone } from "react-icons/ci";
 
+import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import { FiInstagram } from "react-icons/fi";
 function ContactInfo() {
   return (
     <section style={{ width: "30%" }}>
       <div
         style={{
-          height: "70%",
+          height: "100%",
           background: "green",
         }}
       >
@@ -21,71 +21,69 @@ function ContactInfo() {
         >
           <div
             style={{
-              display: "flex",
-              fontSize: "25px",
-              color: "white",
-              margin: "300px 20px 5px",
-              padding: "2px",
+              background:
+                "radial-gradient(circle, hsla(197, 98%, 51%, 1) 0%, hsla(252, 100%, 36%, 1) 84%)",
             }}
           >
-            <MdEmail size={25} color="white" />
-            Email
+            <div
+              style={{
+                color: "white",
+                margin: "40px 70px 5px",
+                padding: "2px",
+              }}
+            >
+              <div style={{ margin: "0px 0px 30px" }}>
+                <FaLinkedin size={90} />
+              </div>
+            </div>
+          </div>
+
+          <div style={{ background: "linear-gradient(#e66465, #9198e5)" }}>
+            <div
+              style={{
+                color: "white",
+                margin: "40px 70px 5px",
+                padding: "2px",
+              }}
+            >
+              <div
+                style={{
+                  margin: "0px 0px 30px",
+                }}
+              >
+                <FiInstagram size={90} />
+              </div>
+            </div>
           </div>
           <div
             style={{
-              fontSize: "10px",
-              color: "white",
-              margin: "0px 20px",
+              background:
+                "radial-gradient(circle, hsla(197, 74%, 43%, 1) 0%, hsla(252, 81%, 58%, 1) 84%)",
             }}
           >
-            anuragpandey4900@gmail.com
+            <div
+              style={{
+                color: "white",
+                margin: "40px 75px 0px",
+              }}
+            >
+              <div style={{ margin: "0px 0px 40px" }}>
+                <FaXTwitter size={90} />
+              </div>
+            </div>
           </div>
-          <div
-            style={{
-              fontSize: "25px",
-              color: "white",
-              margin: "20px",
-            }}
-          >
-            <CiPhone />
-            Phone
-          </div>
-          <div
-            style={{
-              fontSize: "10px",
-              color: "white",
-              margin: "0px 20px",
-            }}
-          >
-            +91-7011964731
-          </div>
-        </div>
-      </div>
-      <div
-        style={{
-          height: "30%",
-          background: "yellow",
-        }}
-      >
-        <div style={{ margin: "5px 0px 0px " }}>
-          <div
-            style={{
-              fontSize: "25px",
-              color: "black",
-              margin: "0px 10px",
-            }}
-          >
-            Find me on
-          </div>
-          <div
-            style={{
-              fontSize: "25px",
-              color: "black",
-              margin: "0px 10px 0px",
-            }}
-          >
-            <FaGithub />
-            <FaLinkedin />
+
+          <div style={{ background: "black" }}>
+            <div
+              style={{
+                color: "white",
+                margin: "50px 80px 20px",
+              }}
+            >
+              <div style={{ margin: "0px 0px 40px" }}>
+                <FaGithub size={90} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
